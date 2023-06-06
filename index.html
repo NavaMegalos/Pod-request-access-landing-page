@@ -16,24 +16,28 @@
   <title>Frontend Mentor | Pod request access landing page</title>
 </head>
 <body>
-  <header>
+  <header class="app__header">
     <picture>
       <img src="./assets/desktop/logo.svg" alt="logo app">
     </picture>
   </header>
 
-  <main>
-    <article>
+  <main class="app__main">
+    <article class="app__main-content">
       <h1 class="app__main-title">
-        Publish your podcasts everywhere.
+        Publish your podcasts <span>everywhere<span>.
       </h1>
       <p class="app__main-description">
         Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
         Apple Podcasts, Google Podcasts, Pocket Casts and more!
       </p>
+
       <form class="form">
-        <input id="email" type="email" placeholder="Email address"> 
-        <input type="submit" value="Request Access">
+        <div class="inputs">
+          <input id="email" type="email" placeholder="Email address"> 
+          <input type="submit" value="Request Access">
+        </div>
+        <span class="error-submitted">Oops! Please check your email</span>
       </form>
 
       <div class="logos">
@@ -44,7 +48,5 @@
       </div>
     </article>
   </main>
-
-  Request access
 </body>
 </html>
