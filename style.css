@@ -1,0 +1,27 @@
+:root {
+    --primary-green-clr: 157 74% 52%;
+    --primary-dark-clr: 225 26% 23%;
+    --primary-black-clr: 224 35% 11%;
+    --primary-white-clr: 0 0% 100%;
+    --primary-gray-color: 225 40% 83%;
+    --secondary-dark-clr: 225 21% 83%;
+
+    --font-family: 'Chivo';
+
+    --title-desktop-fs: 52px;
+    --title-tablet-fs: 48px;
+    --title-mobile-fs: 26px;
+
+    --title-desktop-line-height: 62px;
+    --title-tablet-line-height: 56px;
+    --title-mobile-line-height: 38px;
+    
+    --base-line-height: 28px;
+    --base-mobile-line-height: 25px;
+
+    --base-fs: 18px;
+    --base-mobile-fs: 15px;
+    --base-input-fs: 14px;
+    --base-warning-fs: 12px;
+}
+
