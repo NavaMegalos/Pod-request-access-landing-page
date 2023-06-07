@@ -5,6 +5,7 @@
   --primary-white-clr: 0 0% 100%;
   --primary-gray-color: 225 40% 83%;
   --primary-red-color: 0 96% 61%;
+  --secondary-green-clr: 157 100% 85%;
   --secondary-dark-clr: 225 21% 83%;
 
   --font-family: "Chivo";
@@ -63,14 +64,14 @@ body {
   top: 130px;
   position: absolute;
   right: 0;
-  width: 85%;
-  height: 640px;
+  width: 1550px;
+  height: 650px;
 }
 
 .app__main-content {
   bottom: -1px;
   left: -1px;
-  width: 50%;
+  width: 750px;
   height: 75%;
   position: absolute;
   background: hsl(var(--primary-black-clr));
@@ -83,6 +84,7 @@ body {
   font-weight: var(--fw-thin);
   text-transform: uppercase;
   line-height: var(--title-desktop-line-height);
+  margin-top: 44px;
   margin-bottom: 24px;
 }
 
@@ -123,8 +125,12 @@ input[type="submit"] {
   color: hsl(var(--primary-black-clr));
   font-size: var(--base-input-fs);
   font-weight: var(--fw-semibold);
-  margin-left: -10rem;
+  margin-left: -11rem;
   width: 11rem;
+}
+
+input[type="submit"]:hover {
+  background: hsl(var(--secondary-green-clr));
 }
 
 .error-submitted {
@@ -143,4 +149,185 @@ input[type="submit"] {
 .logos > * {
   margin-right: 2rem;
 }
+
+.dots {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+}
+
+@media (max-width: 1550px) {
+  .app__main {
+    background: url('./assets/desktop/image-host.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    top: 130px;
+    position: absolute;
+    right: 0;
+    width: 95%;
+    height: 650px;
+  }
+
+  .app__main-content {
+    bottom: -1px;
+    left: -1px;
+    width: 65%;
+    height: 75%;
+    position: absolute;
+    background: hsl(var(--primary-black-clr));
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .app__header {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+
+  .app__main {
+    background: url('./assets/desktop/image-host.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 650px;
+    top: 0;
+  }
+
+  .app__main-content {
+    bottom: -1px;
+    left: -200px;
+    width: 100%;
+    height: 75%;
+    position: absolute;
+    background: hsl(var(--primary-black-clr));
+    padding: 1rem;
+  }
+
+  .app__main-description {
+    color: hsl(var(--primary-gray-color));
+    font-weight: var(--fw-thin);
+    line-height: var(--base-line-height);
+    margin-bottom: 20px;
+    width: 85%;
+  }
+
+  .dots {
+    left: -180px;
+    bottom: -220px;
+    
+  }
+}
+
+@media (max-width: 768px) {
+
+  .app__header {
+    text-align: center;
+    margin: 1rem 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .app__main {
+    background: url('./assets/desktop/image-host.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .app__main-content {
+    background: hsl(var(--primary-black-clr) / .9);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin-inline: auto;
+    padding: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .app__main-content .app__main-title, .app__main-description {
+    width: 85%;
+    margin-inline: auto;
+  }
+  
+  .app__main-title {
+    font-size: var(--title-mobile-fs);
+    line-height: var(--title-mobile-line-height);
+    margin-top: 8rem;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 250px;
+  }
+
+  .form {
+    order: 2;
+    text-align: center;
+    width: 75%;
+    margin-inline: auto;
+  }
+
+  .inputs {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  input[type="email"] {
+    background: hsl(var(--primary-dark-clr));
+    color: hsl(var(--primary-white-clr));
+    font-weight: var(--fw-semibold);
+    border: none;
+    line-height: var(--base-line-height);
+    padding: 1rem 1rem 1rem 2rem;
+    width: 85%;
+  }
+
+  input[type="submit"] {
+    background: hsl(var(--primary-green-clr));
+    color: hsl(var(--primary-black-clr));
+    border: none;
+    font-size: var(--base-input-fs);
+    font-weight: var(--fw-semibold);
+    padding: 1rem 1rem 1rem 2rem;
+    width: 95%;
+    margin-inline: auto;
+    margin: 1rem 0;
+    line-height: var(--base-line-height);
+  }
+
+  .error-submitted {
+    display: none;
+  }
+
+  .logos {
+    order: 1;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    padding: .5rem;
+  }
+
+  .logos img {
+    width: 70px;
+  }
+
+  .dots {
+    display: none;
+  }
+}
+
 
