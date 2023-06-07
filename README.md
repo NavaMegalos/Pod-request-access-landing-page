@@ -12,7 +12,6 @@ This is a solution to the [Pod request access landing page challenge on Frontend
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
 - [Author](#author)
 
 ## Welcome! 👋
@@ -28,13 +27,22 @@ Uers should be able to:
   - The email is not formatted correctly should show "Oops! Please check your email"
 
 ### Links
+- Link to the solution: https://pod-request-nava.netlify.app/
 
 ## My process
 
 ### Built with
 
-### What I learned
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
 
-### Continued development
+### What I learned
+In this project I learned how to use a sort combination between flexbox and grid, also I learn how to put my background image in a way that fit all the page itself and positioning my logo and my content in front of it, nevertheless, I have to learn more about best practices but I am on the road to be a better web developer... so, until later!
 
 ## Author
+- Juan Nava
+- Profile on FrontEnd Mentor: https://www.frontendmentor.io/profile/juannava67
+
+``` Don't forget to give me a touch if u have some tips for me! ```
